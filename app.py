@@ -51,7 +51,7 @@ def price_predict():
 
 }, index=[0])
     
-    pred_price = model.predict(test_df)
+    pred_price = model.predict(test_df1)
     
     return jsonify({'House Price' : str(pred_price)})
 
